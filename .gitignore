@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Environment files (Secrets)
+.env
+*.env
+backend/.env
+frontend/.env
+*.env.local
+
+# Production Build & Dist Outputs
+dist/
+build/
+out/
+
+# Temporary and Scratch Directories
+scratch/
+.tempmediaStorage/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
