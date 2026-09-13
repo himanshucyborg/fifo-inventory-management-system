@@ -46,3 +46,14 @@ export async function runSimulation(token) {
   }
   return data;
 }
+
+export async function getProductBatches(productId, token) {
+  const response = await fetch(`${API_PREFIX}/inventory/${productId}/batches`, {
+    headers: { 'Authorization': `Bearer ${token}` }
+  });
+  const data = await response.json();
+  if (!response.ok) {
+    throw new Error(data.error || 'Failed to fetch product batches');
+  }
+  return data;
+}

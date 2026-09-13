@@ -73,7 +73,9 @@ export default function TransactionLedger({ transactions }) {
                   </td>
                   <td>
                     <strong>{tx.product_id}</strong>
-                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{tx.product_name}</div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                      Batch ID :: {tx.id}
+                    </div>
                   </td>
                   <td>
                     <strong style={{ color: isPurchase ? 'var(--accent-emerald)' : 'var(--accent-rose)' }}>
